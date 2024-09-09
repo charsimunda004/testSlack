@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+// question number 1
+function isPalindromestring(str){
+    const string = str.split('').reverse().join('');
+    return str === string;}
+console.log(isPalindromestring("oho"));
+console.log(isPalindromestring("sjfdhklfsdh"));
+
+// question number 3
+class Animal {
+  speak() {
+    console.log("animal is making sound");
+  }
+}
+class Dog extends Animal {
+  speak() {
+    console.log("dog is  barking");
+  }
+}
+let myAnimal = new Animal();
+myAnimal.speak();
+let myDog = new Dog();
+myDog.speak();
+// question number 4
+const newElement = document.createElement('button');
+newElement.textContent = 'Click here!'; 
+newElement.id = 'myButton';
+function clicked(){
+    alert('Button Clicked!');
+}
+newElement.addEventListener('click', clicked)
+document.body.appendChild(newElement);
+
+
+
+
+    </script>
+</body>
+</html>
